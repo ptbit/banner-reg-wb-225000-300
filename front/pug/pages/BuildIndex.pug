@@ -3,5 +3,18 @@
     .reg__header
       .reg__logo
         img(src="./img/logo.svg" alt="favbet logo")
-      
-    
+      p.reg__text Вітальний Бонус
+      .reg__bonus.bonus
+        .bonus__money 225 000 ₴
+        .bonus__fs 300 FS
+    .reg__players
+      picture
+        source(media="(max-width: 1032px) and (min-height: 1032px) and (orientation: portrait)" srcset="img/players.png")
+        source(media="(max-width: 1024px)" srcset="img/players-512.png")
+        source(media="(max-width: 1280px)" srcset="img/players-640.png")
+        source(media="(max-width: 1440px)" srcset="img/players-720.png")
+        source(media="(min-width: 1441px)" srcset="img/players-960.png")
+        img(src="img/players-640.png" alt="favbet players")
+    p.reg__footer Під бонусом розуміється можливість отримати приз в рамках акції «Вітальний бонус». 
+      | Період дії акції з 24.03.2025 по 31.12.2025 року. 
+      | Бонус доступний тільки для нових клієнтів. Деталі на сайті favbet.ua.
