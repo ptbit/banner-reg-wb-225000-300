@@ -3,10 +3,20 @@ $white: #ffffff
 $grey: #E3E3E3
 $pink: #FF267E
 
-$font-suisse: SuisseIntl-Medium, sans-serif
+$font-suisse: SuisseIntl-Medium, sans-serif //500
+$font-suisse-bold: SuisseIntl-Bold, sans-serif //700
 
 body
   background-color: #3a3a3a // development
+  // position: relative
+  // &::after
+  //   content: ''
+  //   position: absolute
+  //   height: 100%
+  //   width: 1px
+  //   background-color: #fff
+  //   left: 50%
+  //   top: 0
 .wrapper
   -webkit-tap-highlight-color: transparent
   overscroll-behavior: none
@@ -31,7 +41,99 @@ body
     background: url("../img/bg-640.jpg") no-repeat 50% 50%/cover
   @media screen and (max-width: 1260px)
     background: url("../img/bg-512.jpg") no-repeat 50% 50%/cover
-  
+  &__header
+    margin-top: 60px
+    display: flex
+    flex-direction: column
+    align-items: center
+  &__logo
+    width: 489px
+    margin-bottom: 50px
+  &__text
+    position: relative
+    color: $white
+    font-family: $font-suisse
+    font-size: 46px
+    font-weight: 500
+    letter-spacing: 1.84px
+    text-transform: uppercase
+    &::after
+      content: '*'
+      position: absolute
+      top: 0
+      right: -10px
+      color: $white
+      font-family: $font-suisse
+      font-size: 20px
+      font-weight: 500
+      letter-spacing: 0.6px
+  &__bonus
+    position: relative
+    &::before
+      content: ''
+      position: absolute
+      left: 0
+      top: 50%
+      width: 55.691px
+      height: 46.409px
+      background-color: red
+      transform: translate(-50%, -50%)
+      background: url('../img/plus.svg') no-repeat 0% 0%/contain
+  &__money
+    color: $white
+    text-transform: uppercase
+    background-color: $pink
+    padding: 8px 25px
+    height: 82px
+    display: flex
+  &__up
+    align-self: flex-end
+    font-family: $font-suisse-bold
+    font-size: 35px
+    font-weight: 700
+    letter-spacing: 1.4px
+    padding-right: 10px
+  &__sum
+    align-self: center
+    font-family: $font-suisse
+    font-size: 70px
+    font-weight: 500
+    letter-spacing: 2.8px
+  &__fs
+    display: flex
+    align-items: center
+    justify-content: center
+    height: 82px
+    background-color: $blue
+    color: $white
+    font-family: $font-suisse
+    font-size: 70px
+    letter-spacing: 2.8px
+    text-transform: uppercase
+  &__players
+    position: absolute
+    bottom: -4px
+    margin: 0 20px
+  &__footer
+    position: absolute
+    z-index: 2
+    bottom: 61px
+    left: 0
+    right: 0
+    max-width: 487px
+    margin: 0 auto
+    color: $white
+    text-align: center
+    font-family: $font-suisse
+    font-size: 14px
+    line-height: 17px 
+    letter-spacing: -0.49px
+
+
+
+
+
+
 
 @media screen and (max-width: 1023px)
   .wrapper
