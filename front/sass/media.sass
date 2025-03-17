@@ -186,11 +186,12 @@
     &__header, &__footer
       transform: scale(1)
     &__logo
-      width: 381px
+      width: 385px
     &__text
       font-size: 37px
       letter-spacing: 1.48px
     &__bonus
+      width: 385px
       &::before
         width: 43.832px
         height: 36.527px
@@ -268,13 +269,14 @@
         top: 2px
         right: -4px
     &__bonus
+      width: 288px
       &::before
         width: 32px
         height: 27.619px
     &__money, &__fs
       height: 49px
     &__money
-      padding: 8px 11px 8px 17px
+      padding: 8px 10px 6px 17px
     &__up
       font-size: 20px
       letter-spacing: 0.8px
@@ -282,6 +284,10 @@
     &__sum, &__fs
       font-size: 42px
       letter-spacing: 1.68px
+    &__sum.noios-padding
+      padding-top: 5px
+    &__fs.noios-padding
+      padding-top: 5px
     &__players
       margin: 0
     &__footer
@@ -332,7 +338,7 @@
       margin-top: 25px
     &__logo
       margin-bottom: 15px
-    &__footer
+    // &__footer
 @media screen and (max-width: 1280px) and (max-height: 620px)
   .reg
     &__players
@@ -378,13 +384,15 @@
         font-size: 15px
         right: -5px
     &__bonus
+      width: 272px
       &::before
         width: 31.291px
         height: 26.076px
     &__money, &__fs
       height: 46px
     &__money
-      padding: 8px 14px
+      padding: 8px 12px
+
     &__up
       font-size: 16px
       letter-spacing: 0.64px

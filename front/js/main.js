@@ -13,16 +13,16 @@ window.addEventListener('orientationchange', () => {
 
 // padding no-ios
 document.addEventListener('DOMContentLoaded', function () {
-  // let date = document.querySelector('.reg__date');
-  // let time = document.querySelector('.reg__time');
+  let sum = document.querySelector('.reg__sum');
+  let fs = document.querySelector('.reg__fs');
   // let teams = document.querySelectorAll('.reg__team');
   // let mid = document.querySelector('.footer__mid');
   // let before = document.querySelector('.footer__before');
 
   if (!/iPad|iPhone|iPod|Mac/.test(navigator.userAgent)) {
-    // console.log('ADD CLASS no iOS')
-    // date.classList.add('noios-padding');
-    // time.classList.add('noios-padding');
+    console.log('ADD CLASS no iOS');
+    sum.classList.add('noios-padding');
+    fs.classList.add('noios-padding');
     // teams.forEach((team) => {
     //   team.classList.add('noios-padding');
     // });
